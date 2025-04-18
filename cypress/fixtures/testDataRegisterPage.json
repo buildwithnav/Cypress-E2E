@@ -1,0 +1,13 @@
+{
+    "personalInfo":{
+        "name":{
+            "firstName" : "Jessie",
+            "lastName"  : "Gill"
+        },
+        "email":"nav.gill7473@gmail.com",
+        "telephone":"562-787-0000"
+    },
+    "loginDetails":{
+        "password": "Cypress1236@"
+    }
+}
