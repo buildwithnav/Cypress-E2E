@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 import testDataRegisterPage from "../fixtures/testDataRegisterPage.json"
-import { registerPage } from "../pages/registerPage.cy";
+import { registerPage } from "../pages/registerPage.cy.js";
 const registerObj = new registerPage();
 
 describe("Complete Registration Flow",()=>{
