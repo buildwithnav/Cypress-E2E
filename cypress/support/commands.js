@@ -30,7 +30,7 @@ const loginPageObj = new loginPage();
 
 
 Cypress.Commands.add('login',(email,password)=>{
-    cy.visit(Cypress.env('loginURL'))
+    cy.visit('')
     cy.get(loginPageObj.webloactors.username).type(email)
     cy.get(loginPageObj.webloactors.password).type(password,{ log: false })
     cy.get(loginPageObj.webloactors.loginButton).click()
