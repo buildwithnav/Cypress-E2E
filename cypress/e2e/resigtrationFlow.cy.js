@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 import testDataRegisterPage from "../fixtures/testDataRegisterPage.json"
 import { registerPage } from "../pages/registerPage.cy.js";
 const registerObj = new registerPage();
