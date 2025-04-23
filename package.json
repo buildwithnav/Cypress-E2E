@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test:addToCart": "npx cypress run --spec 'cypress/e2e/addToCart.cy.js' --headed --browser chrome",
+    "test:smokeRun":"npx cypress run --spec 'cypress/e2e/addToCart.cy.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
