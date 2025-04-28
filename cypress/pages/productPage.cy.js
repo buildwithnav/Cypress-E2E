@@ -2,7 +2,7 @@ export class productPage {
 
     webloactors={
         addToCart:'Add to Cart',
-        cartButton: '.btn.btn-inverse.btn-block.btn-lg.dropdown-toggle',
+        cartButton: '.btn.btn-inverse.btn-block.btn-lg.dropdown-toggle1',
         successMessage: '.alert.alert-success.alert-dismissible'
     }
 

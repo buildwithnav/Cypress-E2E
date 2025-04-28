@@ -15,6 +15,7 @@ jobs:
           command: npm run test:addToCart-GitHubActions
 
       - name: Upload Cypress Mochawesome Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: Mochawesome Test Report - Add To Cart
@@ -30,7 +31,7 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:registrationFlow-GitHubActions
-          
+
       - name: Upload Cypress Mochawesome Report
         uses: actions/upload-artifact@v4
         with:
