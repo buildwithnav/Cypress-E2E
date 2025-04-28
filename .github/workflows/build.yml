@@ -15,3 +15,13 @@ jobs:
         with:
           command: npm run test:addToCart
           
+      - name: Upload Cypress Mochawesome Report
+        uses: actions/upload-artifact@v4
+        with:
+            name: Mochawesome Test Report
+            path: cypress/reports/mochawesome.html # adjust path if needed
+        
+      - name: Post Cypress Report Link
+        run: |
+          echo "### 📋 [View Test Report Artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+        
