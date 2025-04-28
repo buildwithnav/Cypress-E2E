@@ -3,7 +3,7 @@ name: Smoke Tests
 on: push
 
 jobs:
-  cypress-run:
+  Only-AddToCart-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
