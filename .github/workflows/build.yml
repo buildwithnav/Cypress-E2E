@@ -19,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
             name: Mochawesome Test Report
-            path: cypress/reports/mochawesome.html # adjust path if needed
+            path: cypress/reports/ # adjust path if needed
         
       - name: Post Cypress Report Link
         run: |
