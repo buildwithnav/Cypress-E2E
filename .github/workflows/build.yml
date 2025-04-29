@@ -25,3 +25,11 @@ jobs:
         run: |
           echo "### 📋 [View Test Report Artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
         
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+            SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+            SLACK_ICON: https://github.com/rtCamp.png?size=48
+            SLACK_MESSAGE: 'SLACK MESSAGE???'
+            SLACK_TITLE: TITLE OF THE MESSAGE
+            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}

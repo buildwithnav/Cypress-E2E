@@ -7,7 +7,7 @@ export class productPage {
     }
 
     addToCartMacbook(){
-        cy.contains(this.webloactors.addToCar).first().click()
+        cy.contains(this.webloactors.addToCart).first().click()
     }
 
     verifySuccessMessage(){
